@@ -1,123 +1,34 @@
-# login-2-
-# Brain Tumor Detection Website
+# TumorAi
+**Early tumor detection is the key to surviving cancer and thriving after** <br>
+Submission for FHS 3rd Annual Hackathon.
 
-![Brain Tumor Detection](banner.png)
+This project was initiated because of the significant importance of brain cancer as a pressing issue. Brain cancer, including gliomas, meningiomas, and pituitary tumors, affects countless individuals and their families around the world. It is a devastating disease that can have profound effects on physical, emotional, and cognitive well-being. Understanding the causes, effects, and available treatments for these brain tumors is crucial for raising awareness, promoting early detection, and improving patient outcomes.
 
-## Introduction
+By exploring the causes of these tumors, we can work towards identifying risk factors and developing preventive strategies. Understanding the effects of brain cancer helps us recognize the impact it has on individuals' lives, guiding efforts to provide appropriate support and care for patients. Additionally, knowledge of the available treatments helps healthcare professionals and patients make informed decisions about managing and combating these tumors effectively.
 
-Welcome to the Brain Tumor Detection website repository! This project is designed to detect brain tumors by analyzing MRI scans of the brain using Artificial Intelligence and Machine Learning techniques. This README file provides an overview of the project, its features, and instructions for setting up and running the website.
+Types of tumors identified:
 
-## Features
+|   | Tumor Types |
+| - | - |
+| 0 | Glioma |
+| 1  | Content Cell |
+| 2  | Pituitary  |
 
-- *MRI Image Upload*: Users can upload MRI scan images of the brain for analysis.
 
-- *Tumor Detection*: The system employs an AI model to analyze the uploaded MRI scans and identify the presence of tumors.
+### Run One Stats
+Confusion Matrix:<br>
+![image](https://github.com/HarjyotS/tumor-ai/assets/66331423/a3a81528-27ad-45d8-a68e-4559c7c2919c)
 
-- *Visualization*: Results are displayed in a user-friendly format, making it easy for users to understand the analysis.
+Multi graph:<br>
+![image](https://github.com/HarjyotS/tumor-ai/assets/66331423/8093a663-d40a-434d-8cdb-e09d2bcc979c)
 
-- *Accessibility*: The website is designed to be accessible and user-friendly for both healthcare professionals and patients.
+Test batch one:<br>
+![image](https://github.com/HarjyotS/tumor-ai/assets/66331423/05e8ea35-dac5-4a71-9381-65c9dc659a59)
 
-## Technology Stack
-
-- *Frontend*:
-  - HTML, CSS, JavaScript
-  - Framework: [React](https://reactjs.org/)
+### How to Use
+To start, just clone the repository
+then create virtual environment  python -m venv projects
+  projects\Scripts\activate
+  then move under the directory where manage.py is located
+  python manage.py runserver
   
-- *Backend*:
-  - Python with [Flask](https://flask.palletsprojects.com/) framework
-  - Deep Learning: [TensorFlow](https://www.tensorflow.org/), [Keras](https://keras.io/)
-
-- *Deployment*:
-  - [Docker](https://www.docker.com/)
-  - [Heroku](https://www.heroku.com/) (for cloud hosting)
-
-## Setup
-
-Follow these steps to set up the project:
-
-1. Clone the repository:
-
-   bash
-   git clone https://github.com/yourusername/brain-tumor-detection.git
-   
-
-2. Navigate to the project directory:
-
-   bash
-   cd brain-tumor-detection
-   
-
-3. Set up the backend:
-
-   - Create a virtual environment and activate it (recommended).
-
-   bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use venv\Scripts\activate
-   
-
-   - Install the required Python packages:
-
-   bash
-   pip install -r requirements.txt
-   
-
-4. Set up the frontend:
-
-   - Navigate to the `frontend` directory:
-
-   bash
-   cd frontend
-   
-
-   - Install the required Node.js packages:
-
-   bash
-   npm install
-   
-
-5. Start the application:
-
-   - Go back to the project root directory:
-
-   bash
-   cd ..
-   
-
-   - Run the application using Docker:
-
-   bash
-   docker-compose up
-   
-
-   The website should now be accessible at `http://localhost:3000`.
-
-## Usage
-
-1. Access the website using a web browser.
-
-2. Upload an MRI scan image of the brain.
-
-3. Wait for the AI model to process the image.
-
-4. The results, including whether a tumor is detected, will be displayed on the screen.
-
-## Contributions
-
-We welcome contributions from the open-source community. If you'd like to improve this project, please fork the repository, create a feature branch, and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- We would like to express our gratitude to the open-source community for providing the tools and frameworks that made this project possible.
-
-- Special thanks to healthcare professionals and researchers in the field of medical image analysis.
-
-If you have any questions, encounter issues, or would like to collaborate, please don't hesitate to contact us. Happy brain tumor detection!
-
-*Disclaimer*: This website is for educational and research purposes and should not be used as a substitute for professional medical advice. If you suspect a medical condition, please consult a healthcare professional.
-
-[Visit the live website](https://your-website-url.com)
