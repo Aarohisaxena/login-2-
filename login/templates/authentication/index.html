@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+ <link rel="icon" type="static/logo real.png" sizes="32x32" href="#">
+    <link rel="icon" type="static/logo.png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+    <title>Medicure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/168ebc7feb.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"
+    />
+  </head>
+ 
+  <body>
+    <!-- Small Devices  -->
+    <header
+      class="h-[60vh] w-full bg-[url('static/brain1.jpg')] bg-no-repeat bg-cover md:hidden lg:hidden"
+    >
+     <!-- Navigation Bar here   -->
+      <nav
+        class="bg-gradient-to-r from-blue-700 to-[#ffffff00] sticky py-2 px-2 flex justify-between shadow-lg backdrop-blur-md z-50"
+      >
+        <div>
+          <p class="font-Inter font-bold lg:text-lg text-white">Medicure</p>
+          <p class="font-Ubuntu text-xs font-semibold lg:text-sm text-slate-200">
+            We care for your Health
+          </p>
+        </div>
+        <div class="flex">
+          <ul class="flex text-white font-mono gap-x-1 lg:mr-8">
+            <li
+              {% comment %} class="lg:mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200" {% endcomment %}
+            >
+              <a class="rounded-3xl bg-blue-500 px-2 py-1 lg:px-4 lg:py-2 text-[10px] lg:text-base" href="#about">About Us</a>
+            </li>
+            <li
+              class="lg:mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded-3xl bg-blue-500 px-2 py-1 lg:px-4 lg:py-2 text-[10px] lg:text-base" href="#service">Insights</a>
+            </li>
+            <li
+              class="lg:mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            ></li>
+             
+            </li>
+            <li
+              class="lg:mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded-3xl bg-blue-500 px-2 py-1 lg:px-4 lg:py-2 text-[10px] lg:text-base" href="#call">Contact</a>
+            </li>
+          </ul>
+        </div> 
+      </nav>
+
+      <!-- Hero section  -->
+      <div id="top" class="absolute top-36 lg:top-[30rem] left-16 lg:left-[29em] lg:z-10">
+        <div class="flex flex-col justify-center">
+          <p class="text-center text-2xl lg:text-6xl text-white font-semibold font-Baloobhai2 lg:mb-16 ">
+            A Better Life Starts with a <br />
+            Healthy Brain 
+          </p>
+        </div>
+        <div class="mt-28 ml-8">
+          <a href="upload"
+            class="text-white m-auto bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-4 text-center mr-2 mb-2"
+          >
+          <i class="fa-regular fa-calendar-days fa-lg mx-2 text-center"></i>
+          Upload File
+        </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- For large devices  -->
+    <header
+      class="hidden md:block lg:block h-[130vh] w-full bg-[url('static/brain1.jpg')] bg-no-repeat bg-cover"
+    >
+     <!-- Navigation Bar here  -->
+      <nav
+        class="bg-gradient-to-r from-blue-700 to-[#ffffff00] fixed py-2 w-full h-12 px-24 flex justify-between shadow-lg backdrop-blur-md z-50"
+      >
+        <a href="">
+          <p style="justify-content: center" class="font-Inter font-bold text-lg text-white">Medicure</p>
+          <!-- <p class="font-Ubuntu font-semibold text-sm text-slate-200">
+            We care for your Health
+          </p> -->
+        </a>
+        <div class="flex">
+          <ul class="flex text-white font-mono mr-8">
+            <li
+              class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded-3xl bg-blue-500 px-4 py-2" href="#about">About Us</a>
+            </li>
+            <li
+              class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded-3xl bg-blue-500 px-4 py-2" href="#services">Insights</a>
+            </li>
+            <li
+              class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+             
+            </li>
+            <li
+              class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded-3xl bg-blue-500 px-4 py-2" href="#call">Contact</a>
+            </li>
+            <style>.dropdown {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+              }
+              
+              .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: blue-500;
+                color: #fff;
+                border: 1px solid #008000;
+                border-radius: 5px;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                transition: all 0.2s ease-in-out;
+              }
+              
+              .dropdown-content a {
+               background- color: blue-500;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+              }
+              
+              .dropdown-content a:hover {background-color: #006000}
+              
+              .dropdown:hover .dropdown-content {
+                display: block;
+              }
+              
+              
+              </style>
+            <div class="dropdown" class="mx-5 py-2 hover:underline transition-all ease-in hover:text-slate-200">
+                <button class="dropbtn" class="rounded-3xl bg-blue-500 px-4 py-2">Sign Up / Sign In</button>
+                <div class="dropdown-content bg-blue-500">
+                  <a href="/signup">Sign Up</a>
+                  <a href="/signin">Sign In</a>
+                </div>
+              </div>
+              
+            {% comment %} <a href="#" class="logo">Your Logo</a> {% endcomment %}
+           
+            
+                
+          </ul>
+          
+        </div> 
+      </nav>
+
+      <!-- Hero section  -->
+      <div id="home" class="absolute top-[30rem] left-[29em] z-10">
+        <div class="flex flex-col justify-center">
+          <p class="text-center text-6xl text-white font-semibold font-Baloobhai2 mb-16 ">
+            A Better Life Starts with a <br />
+            Healthy Brain
+          </p>
+          <a href="upload"
+            class="text-white flex items-center justify-center bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-4 text-center mr-2 mb-2"
+          >
+          <svg class="w-6 h-6 mx-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg> 
+          Upload File
+        </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="about" class="about-section my-6 mx-4 lg:my-10 lg:mx-24">
+        <div>
+          <!-- Left Section  -->
+          <div class="lg:w-[45%]">
+            <h1 class="lg:text-5xl text-2xl font-bold font-serif my-2 lg:my-4">
+              Welcome to Medicure
+              
+            </h1>
+            <p class="text-sm lg:text-base my-3">
+              Discover the Future of Healthcare: Our AI-Driven Brain Tumor Detection Web Application. Harnessing state-of-the-art
+              algorithms, our user-friendly interface empowers early brain tumor detection. Trust in our precision and efficiency for
+              reliable results. Join us on the journey to redefine healthcare with innovative technology
+            </p>
+          </div>
+          <div class="lg:flex lg:justify-between">
+            <div class="lg:w-[40%] lg:my-12 px-5">
+              <div class="flex justify-center items-start my-4 lg:my-12">
+                <!-- <div class="mt-[6px] mr-4 text-[#1E6DFF] ">
+                   <i class="fa-solid fa-stethoscope fa-xl lg:fa-2xl m-1"></i>
+                </div> 
+                
+              </div>
+  
+              <div class="flex justify-center items-start my-4 lg:my-12">
+                 <div class="mt-[6px] mr-4 text-[#1E6DFF]">
+                  <i class="fa-solid fa-tooth fa-xl lg:fa-2xl mt-1"></i>
+                </div> -->
+                
+              </div>
+              <!-- <div class="flex items-center text-[#1E6DFF] cursor-pointer text-sm ml-8">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="" class="px-2">
+                  <strong>View on Google Map</strong>
+                </a>
+              </div> -->
+            </div>
+
+            <!-- Right Section  -->
+            
+    
+          <!-- Our Department  -->
+          
+
+          <!-- About The Doctor  -->
+          <div class="lg:flex lg:justify-between">
+            <div class="hidden lg:flex my-10 w-1/2">
+              <img class="z-10 w-52 h-52" src="static/brain1.jpg" alt="HappySmile">
+              <img class="w-44 h-40 relative right-10" src="static/dotsx2.png" alt="HappySmile">
+              <img class="z-20 relative right-60 top-44 w-56 h-64" src="static/helping needy.jpg" alt="HappySmile">
+            </div>
+      
+            <div class="flex flex-col justify-start lg:w-[40%] lg:my-12 gap-y-6 px-4">
+              <h3 class="text-2xl font-bold">Committed to Brain Tumor Diagnosis </h3>
+              <h3 class="hidden text-4xl font-bold">Committed To Brain Tumor <br> Diagnosis</h3>
+              <h4 class="text-xl font-semibold text-slate-700">We provide longer life and healthy brain </h4>
+              <p class="w-[90%] text-slate-600 text-sm font-medium">With over a decade of experience, we are pioneers in the realm of Brain Tumor Detection. Our core strength lies in an
+              exceptional AI-driven model, rooted in a robust dataset, capable of revolutionizing diagnosis accuracy. The future holds
+              exciting prospects as we aim to integrate our model with the UN and WHO datasets, further enhancing its global impact.
+              
+              But we're not just about technology; we're about people. We proudly collaborate with NGOs, ensuring that our
+              cutting-edge solutions are accessible to those in need. Our focus remains unwavering - to support hospitals and aid
+              doctors in providing the best care possible, making patient outcomes better than ever before. Join us in our mission to
+              redefine brain tumor detection for a healthier world..</p>
+              <!-- <div class="my-8">
+                <h5 class="text-lg font-semibold">Dr. Imran Mondal</h5>
+                <p class="text-sm text-slate-600 italic w-[90%]">Senior House Surgeon, Dept. of Oral & Maxillofacial Surgery Burdwan Dental College and Hospital (Govt.)</p>
+              </div> -->
+            </div>
+            <!-- <div class="m-auto w-52 lg:hidden">
+              <img src="/Images/DRImran2_sm.png" alt="">
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section  -->
+      <!-- <section id="contact">
+        <div class="w-full lg:w-[85%] bg-gradient-to-r from-blue-500 to-blue-700 lg:flex lg:justify-between lg:mt-10 py-12">
+          <div class="lg:ml-24 py-10 lg:py-20 w-full lg:w-[50%] flex flex-col lg:items-start items-center place-content-start">
+            <h3 class="text-3xl lg:text-3xl font-serif text-white font-bold">New Patient</h3>
+            <p class="text-lg lg:text-xl font-semibold w-[70%] my-4 text-slate-200">Are you a new patient?  Don't worry we're here to care dental problems. Fill the form that given beside or just give a call.
+            </p>
+            <p class="text-xl lg:text-2xl text-white font-bold mt-4 lg:mt-10">NEED ASSISTANCE?</p>
+            <p class="text-sm lg:text-xl text-white font-semibold cursor-pointer hover:underline my-4">+916297524875</p>
+          </div>
+
+          <div class="lg:w-[50%] px-2 lg:py-20 lg:z-30">
+            <div class="px-2 py-8 flex flex-col lg:w-1/2 justify-center items-center bg-white rounded-xl shadow-2xl lg:relative lg:left-[26rem]">
+              <input class="bg-slate-200 my-2 border-none rounded-sm text-sm font-mono" type="text" placeholder="Your Name">
+              <input class="bg-slate-200 my-2 border-none rounded-sm text-sm font-mono" type="email" name="" id="" placeholder="Your Email">
+              <input class="bg-slate-200 my-2 border-none rounded-sm text-sm font-mono" type="text" name="" id="" placeholder="Your Phone Number">
+              <button class="py-2 px-6 border border-blue-500 rounded-md text-sm text-blue-500 font-semibold my-3 hover:bg-blue-500 hover:text-white hover:border-none">Submit</button>
+            </div>
+          </div>
+          <img class="hidden lg:block absolute right-12" src="Images/dotsx2.png" alt=""> 
+        </div>
+      </section> -->
+      
+      <!-- Featured Section  -->
+      
+
+      <!-- Images Row  -->
+      <!-- For Small Devices -->
+      <section id="service" class=" mx-4 pt-8 flex flex-col justify-center items-center m-auto md:hidden lg:hidden">
+          
+          <div class="flex flex-col px-4 my-3">
+            <h2 class="text-xl font-bold my-1">Various Insights from Medicure</h2>
+            <p class="text-black-500 font-semibold">
+              A brain tumor detection dataset consisting of MRI scans provides a wealth of information that can be mined for valuable
+              insights. Here are some of the key insights that can be derived from such a dataset:
+
+            </p>
+          </div>
+          
+          <div class="flex m-auto">
+            <div class="">
+              <div class="text-black px-3 py-4 w-48 h-[15rem]  bg-no-repeat height">
+                <p class="text-base font-semibold" >1.</p>
+                <p class="text-base font-semibold">Tumor Localization</p>
+                <p class="text-black-100 my-4 text-xs">By analyzing the MRI scans, one can determine the exact location of the tumor within the brain. This information is
+                crucial for surgical planning and treatment..</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="text-black px-3 py-4 w-48 h-[15rem]  bg-no-repeat">
+                <p class="text-base font-semibold">2.</p>
+                <p class="text-base font-semibold">Tumor Classification</p>
+                <p class="text-black-100 my-4 text-xs">The dataset can be used to classify tumors into different types (e.g., glioblastoma, meningioma, etc.) based on their
+                characteristics, which helps in tailoring treatment approaches..</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="flex m-auto">
+            <div class="">
+              <div class="text-black px-3 py-4 w-48 h-[15rem]bg-cover bg-center bg-no-repeat ">
+                <p class="text-base font-semibold">3.</p>
+                <p class="text-base font-semibold">Tumor Growth Rate</p>
+                <p class="text-black-100 my-4 text-xs">Over time, analyzing multiple scans for the same patient can provide insights into the growth rate of the tumor, helping
+                doctors make informed decisions about treatment urgency.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="text-black px-3 py-4 w-48 h-[15rem]  bg-no-repeat">
+                <p class="text-base font-semibold">4.</p>
+                <p class="text-base font-semibold">Patient Prognosis</p>
+                <p class="text-black-100 my-4 text-xs">The dataset can be used to study the relationship between tumor characteristics and patient outcomes, aiding in
+                prognosis and treatment recommendations. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex m-auto">
+            <div class="">
+              <div class="text-black px-3 py-4 h-[15rem] w-48  bg-no-repeat">
+                <p class="text-base font-semibold">5.</p>
+                <p class="text-base font-semibold">Treatment Response</p>
+                <p class="text-black-100 my-4 text-xs">Monitoring changes in the tumor's appearance in follow-up scans can help evaluate the effectiveness of treatments,
+                allowing for adjustments as needed.</p>
+              </div>
+            </div>
+  
+            <div>
+              <div class="text-black px-3 py-6 h-[15rem] w-48 bg-no-repeat">
+                <p class="text-base font-semibold">6.</p>
+                <p class="text-base font-semibold">Risk Factors and Patterns</p>
+                <p class="text-black-100 my-4 text-xs">Analyzing the dataset can reveal common risk factors for brain tumors and patterns in their occurrence, which can inform
+                preventative measures.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex m-auto">
+            <div class="">
+              <div class="text-black px-3 py-4 h-[15rem] w-48  bg-no-repeat">
+                <p class="text-base font-semibold">7.</p>
+                <p class="text-base font-semibold">Patient Demographics​</p>
+                <p class="text-black-100 my-4 text-xs">Understanding the demographic factors associated with brain tumors, such as age and gender, can provide insights into
+                the disease's prevalence.
+                </p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="text-black px-3 py-6 h-[15rem] w-48 bg-no-repeat" id="i1">
+                <p class="text-base font-semibold">8.</p>
+                <p class="text-base font-semibold">Machine Learning Models​</p>
+                <p class="text-black-100 my-4 text-xs">The dataset can be used to develop and refine machine learning models for automated tumor detection and classification,
+                enhancing diagnostic accuracy.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 py-8 bg-blue-500 w-full flex flex-col justify-center my-6">
+            <p class="text-slate-100 text-sm font-bold">
+              FOR ANY QUERY
+            </p>
+            <h2 class="text-lg font-bold text-white">Call us :- 00011555 /0001155</h2>
+          </div>
+
+      </section>
+
+      <!-- For Large devices  -->
+      <section id="services" class="hidden md:flex py-12 px-24 lg:flex  flex-col justify-center items-center w-[80%] m-auto ">
+        <!-- Images Row 1  -->
+        <div class="flex m-auto">
+          <div class="w-[50%] flex flex-col px-8 content-end">
+            <h2 class="text-3xl font-bold my-4 ">Various Insights from Medicure</h2>
+            <p class="text-black-500 text-lg font-bold">
+              A brain tumor detection dataset consisting of MRI scans provides a wealth of information that can be mined for valuable
+              insights. Here are some of the key insights that can be derived from such a dataset:
+            </p>
+          </div>
+          
+          <div class="w-1/2 flex">
+            <div class=" h-[17rem]  bg-no-repeat">
+              <div class="text-black px-3 py-6 w-60">
+                <p class="text-lg font-semibold">1.</p>
+                <p class="text-lg font-semibold">Tumor Localization</p>
+                <p class="text-black-100 my-4 text-sm">By analyzing the MRI scans, one can determine the exact location of the tumor within the brain. This information is
+                crucial for surgical planning and treatment.</p>
+              </div>
+            </div>
+            
+            <div class=" h-[17rem]  bg-no-repeat">
+              <div class="text-black px-3 py-6 w-60">
+                <p class="text-lg font-semibold">2.</p>
+                <p class="text-lg font-semibold">Tumor Classification</p>
+                <p class="text-black-100 my-4 text-sm">The dataset can be used to classify tumors into different types (e.g., glioblastoma, meningioma, etc.) based on their
+                characteristics, which helps in tailoring treatment approaches.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Images Row 2  -->
+        <div class="flex">
+          <div class=" h-[17rem] bg-cover bg-center bg-no-repeat">
+            <div class="text-black px-3 py-6 w-60">
+              <p class="text-lg font-semibold">3.</p>
+              <p class="text-lg font-semibold">Tumor Growth Rate</p>
+              <p class="text-black-100 my-4 text-sm">Over time, analyzing multiple scans for the same patient can provide insights into the growth rate of the tumor, helping
+              doctors make informed decisions about treatment urgency.</p>
+            </div>
+          </div>
+          
+          <div class=" h-[17rem] bg-no-repeat">
+            <div class="text-black px-3 py-6 w-60">
+              <p class="text-lg font-semibold">4.</p>
+              <p class="text-lg font-semibold">Patient Prognosis</p>
+              <p class="text-black-100 my-4 text-sm">the dataset can be used to study the relationship between tumor characteristics and patient outcomes, aiding in prognosis
+              and treatment recommendations. </p>
+            </div>
+          </div>
+
+          <div class=" h-[17rem]  bg-no-repeat">
+            <div class="text-black px-3 py-6 w-60">
+              <p class="text-lg font-semibold">5.</p>
+              <p class="text-lg font-semibold">Treatment Response</p>
+              <p class="text-black-100 my-4 text-sm">Monitoring changes in the tumor's appearance in follow-up scans can help evaluate the effectiveness of treatments,
+              allowing for adjustments as needed.</p>
+            </div>
+          </div>
+
+          <div class=" h-[17rem] bg-no-repeat">
+            <div class="text-black px-3 py-6 w-60">
+              <p class="text-lg font-semibold">6.</p>
+              <p class="text-lg font-semibold">Risk Factors and Patterns</p>
+              <p class="text-black-100 my-4">Analyzing the dataset can reveal common risk factors for brain tumors and patterns in their occurrence, which can inform
+              preventative measures.</p>
+            </div>
+          </div>
+        </div>
+          <!-- Images Row 3  -->
+        <div class="flex m-auto px-7">
+                  
+          <div class="flex">
+            <div class=" h-[17rem]  bg-no-repeat">
+              <div class="text-black px-3 py-6 w-60">
+                <p class="text-lg font-semibold">7.</p>
+                <p class="text-lg font-semibold">Patient Demographics</p>
+                <p class="text-black-100 my-4 text-sm">Understanding the demographic factors associated with brain tumors, such as age and gender, can provide insights into
+                the disease's prevalence.
+                </p>
+              </div>
+            </div>
+            
+            <div class=" h-[17rem]  bg-no-repeat">
+              <div class="text-black px-3 py-6 w-60">
+                <p class="text-lg font-semibold">8.</p>
+                <p class="text-lg font-semibold">Machine Learning Models​</p>
+                <p class="text-black-100 my-4 text-sm">The dataset can be used to develop and refine machine learning models for automated tumor detection and classification,
+                enhancing diagnostic accuracy.</p>
+              </div>
+            </div>
+        
+          <div class="w-[30rem] px-14 bg-blue-500 flex flex-col justify-center rounded-br-full">
+            <p class="text-slate-100 text-sm font-bold">
+              FOR ANY QUERY
+            </p>
+            <h2 class="text-lg font-bold text-white">Call us :- 00011555/ 00011555</h2>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section  -->
+      <!-- For Small Devices  -->
+      <!-- <section id="review" class="w-full bg-blue-100 my-10 lg:hidden">
+        <h3 class="text-lg lg:text-3xl font-bold text-center py-2">Result After Treatment</h3>
+        <div class="w-[80%] m-auto flex items-center lg:flex-row lg:gap-x-4 lg:py-10 py-6 gap-x-4 ">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_1.png" alt="">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_2.png" alt="">
+        </div>
+        <div class="w-[80%] m-auto flex items-center lg:flex-row lg:gap-x-4 lg:py-10 py-2 gap-x-4">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_3.png" alt="">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_4.png" alt="">
+        </div>
+        <p class="text-sm lg:text-base italic text-slate-600 text-center px-8 py-10">To see more testimonial visit our facebook page 👉 <a class="underline hover:text-blue-900" href="https://www.facebook.com/profile.php?id=100070483394854" target="_blank">Happy Smile Dental Clinic</a></p>
+      </section> -->
+
+      <!-- For Large Devices  -->
+      <!-- <section id="reviews" class="w-full bg-blue-100 my-10 hidden lg:block">
+        <h3 class="text-3xl font-bold text-center py-2">Result After Treatment</h3>
+        <div class="w-[80%] m-auto flex items-center lg:flex-row lg:gap-x-4 lg:py-10 py-6 gap-x-4 ">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_1.png" alt="">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_2.png" alt="">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_3.png" alt="">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_4.png" alt="">
+        </div>
+        <p class="text-sm lg:text-base italic text-slate-600 text-center px-8 py-10">To see more testimonial visit our facebook page 👉 <a class="underline hover:text-blue-900" href="https://www.facebook.com/profile.php?id=100070483394854" target="_blank">Happy Smile Dental Clinic</a></p>
+      </section> -->
+
+      
+      <!-- Location  -->
+      <section id="call">
+        <h4 class="text-center text-xl lg:text-3xl my-4 font-bold">How To Find Us</h4>
+        <div class="bg-blue-600 flex flex-col lg:flex-row justify-center items-center lg:justify-evenly py-14 my-8">
+          <div class="text-white flex justify-between lg:items-center py-2 lg:py-4  ml-6">
+            <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-3"><i class="fa-solid fa-map-location-dot"></i></span>
+            <div>
+              <p class="text-base lg:text-xl">Address</p>
+              <p class="text-xs lg:text-sm">Master's union  <br>
+                xyz</p> 
+            </div>
+          </div>
+          
+          <div class="text-white flex justify-between lg:items-center py-4 ml-[13px]">
+            <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-2"><i class="fa-solid fa-mobile-screen-button"></i></span>
+            <div>
+              <p class="text-base lg:text-xl">Phone</p>
+              <p class="text-xs lg:text-sm">00011555 /
+                00011555</p> 
+            </div>
+          </div>
+
+          <div class="text-white flex justify-between lg:items-center py-4">
+            <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-3"><i class="fa-solid fa-envelope"></i></span>
+            <div>
+              <p class="text-base lg:text-xl">Email</p>
+              <p class="text-xs lg:text-sm">Medicure@fabfour</p> 
+            </div>
+          </div>
+        </div>
+        
+        
+      </section>
+    </main>
+
+    <footer class="w-full px-12 py-10 bg-[#1D3157] text-white">
+      <div class="text-slate-300 underline text-sm text-right animate-bounce my-2"><a href="#home" >Back To Top </a></div>
+      <section class="w-full lg:m-auto flex flex-col lg:flex-row lg:justify-between ">
+        <p class="sm:text-center">Copyright © 2023 Medicure| Powered by <a class="text-yellow-300 hover:underline hover:text-yellow-600" href="#" target="_blank">The Fab Four</a> aka HTM </p>
+        <div class="flex items-center justify-center lg:gap-x-7 lg:content-end lg:ml-96 mt-5 gap-x-4">
+          <a href="#/" target="_blank" class="hover:text-green-500"><i class="fa-brands fa-github fa-xl"></i></span>
+          <a href="#" target="_blank" class="hover:text-blue-400"><i class="fa-brands fa-linkedin-in fa-xl"></i></span>
+          <a href="#" target="_blank" class="hover:text-fuchsia-300"><i class="fa-regular fa-envelope fa-xl"></i></span>
+          <a href="#" target="_blank" class="hover:text-sky-400"><i class="fa-brands fa-twitter fa-xl"></i></span>
+        </div>
+      </section>
+    </footer>
+
+ 
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+  </body>
+</html>
